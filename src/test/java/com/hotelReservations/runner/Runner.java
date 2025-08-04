@@ -1,0 +1,19 @@
+package com.hotelReservations.runner;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources",
+        glue = {"com/hotelReservations/steps"},
+        tags = "@booking",
+        dryRun = false
+)
+
+
+
+public class Runner {
+
+}
